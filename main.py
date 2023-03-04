@@ -142,7 +142,10 @@ def random_pass_generator(length: int, include_nums: bool, include_special_symbo
 
 
 
+def main():
+    app.run(host='0.0.0.0', port=os.getenv("PORT", 3000))
+
 if __name__ == '__main__':
-    app.run(host="0.0.0.0")
+    main()
 
 
